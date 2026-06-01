@@ -1,0 +1,44 @@
+system:
+  host: "localhost"
+  camera_id: "camera_01"
+  log_level: "INFO"
+
+network_ports:
+  server1_gateway: 6100
+  server2_processing: 6200
+  server3_storage: 6300
+
+streaming:
+  fps: 5
+  socket_timeout_seconds: 10
+  max_frames: 120
+  source: "data/data1.mp4"
+
+spark:
+  app_name: "DS200PersonCountingStream"
+  master: "local[*]"
+  checkpoint_dir: "output/checkpoints/person_counting"
+
+model_weights:
+  yolo_path: "models/yolo26n.pt"
+  person_class_id: 0
+
+cascade_parameters:
+  global_conf_threshold: 0.25
+  cascade_trigger_threshold: 0.45
+  density_trigger_limit: 5
+  local_conf_threshold: 0.30
+  padding_pixels: 30
+  local_upscale_factor: 1.5
+  duplicate_center_distance: 28
+  min_cluster_center_distance: 90
+
+tracking:
+  tracker_type: "centroid"
+  track_buffer_frames: 30
+  match_distance_pixels: 80
+
+storage:
+  result_jsonl: "output/results/camera_01_log.jsonl"
+  summary_json: "output/results/summary.json"
+  report_txt: "output/results/report.txt"

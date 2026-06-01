@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+output/checkpoints/
+output/results/*.tmp
+*.log
+benchmark/
+
+# Keep sample outputs small and reviewable.
+models/*.onnx
+models/*.engine

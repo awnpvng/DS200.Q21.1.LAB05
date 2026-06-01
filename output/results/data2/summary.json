@@ -1,0 +1,12 @@
+{
+  "source": "data\\data2.mp4",
+  "frames_processed": 1008,
+  "max_persons_in_frame": 11,
+  "avg_persons_per_frame": 5.73,
+  "total_unique_persons_counted": 70,
+  "processing_time_seconds": 179.84,
+  "processing_fps": 5.6,
+  "dynamic_cascade": true,
+  "sahi_used": false,
+  "tracking_enabled": true
+}

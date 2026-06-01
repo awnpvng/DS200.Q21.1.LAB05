@@ -1,0 +1,9 @@
+DS200 Lab 05 - Dynamic Cascade Person Counting Report
+Source: data\data2.mp4
+Frames processed: 1008
+Average persons/frame: 5.73
+Max persons/frame: 11
+Total unique persons counted: 70
+Processing FPS: 5.6
+SAHI used: no
+Tracking enabled: yes

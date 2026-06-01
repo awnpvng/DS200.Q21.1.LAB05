@@ -1,0 +1,44 @@
+{
+  "total_videos": 3,
+  "total_frames_processed": 3084,
+  "total_processing_time_seconds": 446.31,
+  "overall_processing_fps": 6.91,
+  "videos": [
+    {
+      "source": "data\\data1.mp4",
+      "frames_processed": 1038,
+      "max_persons_in_frame": 8,
+      "avg_persons_per_frame": 3.85,
+      "total_unique_persons_counted": 47,
+      "processing_time_seconds": 109.66,
+      "processing_fps": 9.47,
+      "dynamic_cascade": true,
+      "sahi_used": false,
+      "tracking_enabled": true
+    },
+    {
+      "source": "data\\data2.mp4",
+      "frames_processed": 1008,
+      "max_persons_in_frame": 11,
+      "avg_persons_per_frame": 5.73,
+      "total_unique_persons_counted": 70,
+      "processing_time_seconds": 179.84,
+      "processing_fps": 5.6,
+      "dynamic_cascade": true,
+      "sahi_used": false,
+      "tracking_enabled": true
+    },
+    {
+      "source": "data\\data3.mp4",
+      "frames_processed": 1038,
+      "max_persons_in_frame": 8,
+      "avg_persons_per_frame": 3.85,
+      "total_unique_persons_counted": 47,
+      "processing_time_seconds": 156.81,
+      "processing_fps": 6.62,
+      "dynamic_cascade": true,
+      "sahi_used": false,
+      "tracking_enabled": true
+    }
+  ]
+}
