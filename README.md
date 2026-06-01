@@ -20,7 +20,7 @@
 
 | Student ID | Full Name | GitHub |
 |:----------:|-----------|--------|
-| Update in submission | Update in submission | [awnpvng](https://github.com/awnpvng) |
+| 23520032 | Trương Hoàng Thành An | [awnpvng](https://github.com/awnpvng) |
 
 ---
 
