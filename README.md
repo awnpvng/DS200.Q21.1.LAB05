@@ -59,36 +59,6 @@ Data streaming context through **PySpark Structured Streaming**.
 - **Result Management:** stores outputs by video for easy submission review.
 
 ---
-
-## System Architecture
-
-```text
-Camera / Video
-      |
-      | frames
-      v
-+---------------------+        TCP JSONL        +-------------------------+
-| Server 1: Gateway   | ----------------------> | Server 2: Processing    |
-| Read frames         |                         | Spark + YOLO + Tracker  |
-+---------------------+                         +-------------------------+
-                                                        |
-                                                        | detection results
-                                                        v
-                                                +-------------------------+
-                                                | Server 3: Storage       |
-                                                | JSONL / summary / report|
-                                                +-------------------------+
-                                                        |
-                                                        v
-                                                output/results/
-```
-
-In Spark mode, Server 1 exposes a TCP source on port `6100` and Spark consumes
-the stream as micro-batches. A plain socket mode is also provided for machines
-without a Java/Spark runtime.
-
----
-
 ## Technologies
 
 | Technology | Purpose |
@@ -421,20 +391,3 @@ tracking IDs.
 
 ---
 
-## Submission Checklist
-
-- [x] Source code committed under `src/`
-- [x] Three-server architecture implemented
-- [x] Big Data streaming context included through PySpark
-- [x] Person detection model configured
-- [x] Bounding boxes returned for detected persons
-- [x] Result storage implemented
-- [x] Output files generated under `output/`
-- [x] GitHub repository prepared for submission
-
----
-
-## License
-
-This project is developed for educational purposes as part of DS200.Q21.1 Big
-Data Analysis Lab 05.
